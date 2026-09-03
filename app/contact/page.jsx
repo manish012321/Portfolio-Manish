@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import Left from '../components/Left'
-import { Mail, MapPin, Send, Download } from 'lucide-react'
+import { Mail, MapPin, Send, Download, Eye } from 'lucide-react'
 import Link from 'next/link'
 
 const contacts = [
@@ -107,7 +107,7 @@ const page = () => {
               </p>
 
               {/* Resume Download */}
-              <div className='flex justify-center pt-2'>
+              <div className='flex justify-center pt-2 gap-2'>
                 <a
                   href="/Manish_Suriyal_Resume.pdf"
                   download="Manish_Suriyal_Resume.pdf"
@@ -116,7 +116,17 @@ const page = () => {
                   <Download size={16} />
                   Download Resume
                 </a>
+                <a
+                  href="/Manish_Suriyal_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className='flex items-center gap-2 px-4 py-2 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-sm transition-all text-sm font-medium text-gray-700 dark:text-gray-200'>
+
+                  <Eye size={16} />
+                  View Resume
+                </a>
               </div>
+
             </div>
 
             {/* Contact Links */}
