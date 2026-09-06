@@ -28,7 +28,7 @@ const contacts = [
     icon: <img src="/linkedin.png" alt="linkedin" className="w-4 h-4 object-contain" />,
     label: "LinkedIn",
     value: "manish-suriyal",
-    href: "https://www.linkedin.com/in/manish-suriyal-8aaba82b0",
+    href: "https://www.linkedin.com/in/manish-suriyal-dev/",
   },
   {
     icon: <img src="/twitter.png" alt="twitter" className="w-4 h-4 object-contain" />,
