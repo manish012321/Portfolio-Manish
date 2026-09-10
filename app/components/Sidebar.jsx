@@ -1,13 +1,16 @@
-import { X, LayoutDashboard, FolderKanban, BookOpen, CalendarCheck, Mail, MapPin, GitBranch, ExternalLink } from "lucide-react";
+import { X, LayoutDashboard, FolderKanban, BookOpen, CalendarCheck, Mail, MapPin, GitBranch, ExternalLink, BriefcaseBusiness } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+
+
 
 const Sidebar = ({ menu, setMenu }) => {
   const pathname = usePathname();
 
   const navLinks = [
     { name: "Overview",    icon: <LayoutDashboard size={18} />, href: "/" },
+    { name: "Experience",    icon: <BriefcaseBusiness size={18} />, href: "/experience" },
     { name: "Projects",    icon: <FolderKanban size={18} />,    href: "/projects" },
     { name: "Blogs",       icon: <BookOpen size={18} />,        href: "/blogs" },
       { name: "Contact",     icon: <Mail size={18} />,            href: "/contact" },

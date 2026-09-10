@@ -11,7 +11,8 @@ const SearchPage = ({ search, setSearch }) => {
     { title: "Projects", desc: "About my projects", href: "/projects" },
     { title: "Contact", desc: "Get in touch", href: "/contact" },
     { title: "Blog", desc: "My thoughts and experiences", href: "/blogs" },
-    { title: "Resume", desc: "My professional background and experience", href: "/contact" },
+    { title: "Resume", desc: "My professional background and experience", href: "/resume" },
+    { title: "Experience", desc: "My experience", href: "/experience" },
   ]
 
   const filtered = searchData.filter((item) =>

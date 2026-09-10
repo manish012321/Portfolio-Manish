@@ -15,7 +15,7 @@ const page = () => {
       { name: "Typescript", icon: "/typescript-icon-svgrepo-com.svg" },
       { name: "Tailwind", icon: "/tailwind-css-svgrepo-com.svg" },
       { name: "Redux", icon: "/redux-svgrepo-com.svg" },
-           
+
     ],
     Backend: [
       { name: "Express", icon: "/express-svgrepo-com.svg" },
@@ -94,16 +94,12 @@ const page = () => {
               <p className='text-xs font-mono text-blue-500 dark:text-blue-400 tracking-widest uppercase'>
                 — Welcome to My Digital Space —
               </p>
-              <motion.h1
-                initial={{ opacity: 0, y: 0 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 4 }}
-                 whileHover={{ scale: 1.1, color: "#3b82f6" }}
+              <h1
                 className='text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-gray-800'>
                 Hi, I'm Manish Suriyal 👋
-              </motion.h1>
+              </h1>
               <p className='text-gray-500 dark:text-gray-400 text-sm'>
-                Full-Stack Developer · BSc IT Student · Uttarakhand, India
+                Full-Stack Developer | Building Scalable, User-Centric Web Apps
               </p>
             </div>
 
@@ -280,7 +276,7 @@ const page = () => {
             {/* Box Game */}
             <div className='space-y-3'>
               <h1 className='text-2xl font-bold '>🎮 Game</h1>
-                <BoxGame />
+              <BoxGame />
             </div>
 
           </div>

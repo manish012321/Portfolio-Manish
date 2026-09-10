@@ -106,7 +106,7 @@ const page = () => {
                 Feel free to reach out through any of the channels below.
               </p>
 
-              {/* Resume Download */}
+              {/* Resume Download
               <div className='flex justify-center pt-2 gap-2'>
                 <a
                   href="/Manish_Suriyal_Resume.pdf"
@@ -125,7 +125,7 @@ const page = () => {
                   <Eye size={16} />
                   View Resume
                 </a>
-              </div>
+              </div> */}
 
             </div>
 
