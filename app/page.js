@@ -95,7 +95,7 @@ const page = () => {
                 — Welcome to My Digital Space —
               </p>
               <h1
-                className='text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-gray-800'>
+                className='text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-gray-200'>
                 Hi, I'm Manish Suriyal 👋
               </h1>
               <p className='text-gray-500 dark:text-gray-400 text-sm'>

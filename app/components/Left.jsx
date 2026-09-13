@@ -34,7 +34,7 @@ const Left = () => {
 
           {/* Bio */}
           <p className='text-sm text-gray-500 dark:text-gray-400 leading-relaxed'>
-            🌱 Learning, building, and growing — one project at a time.
+            Building responsive websites and powerful web applications.
           </p>
 
           {/* Divider */}
@@ -66,7 +66,7 @@ const Left = () => {
             </div>
             <div className='w-px bg-gray-200 dark:bg-zinc-700' />
             <div className='text-center'>
-              <p className='text-xl font-bold text-gray-900 dark:text-white'>Mern</p>
+              <p className='text-xl font-bold text-gray-900 dark:text-white'>Full</p>
               <p className='text-xs text-gray-500 dark:text-gray-400'>Stack</p>
             </div>
             <div className='w-px bg-gray-200 dark:bg-zinc-700' />

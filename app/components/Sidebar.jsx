@@ -1,4 +1,4 @@
-import { X, LayoutDashboard, FolderKanban, BookOpen, CalendarCheck, Mail, MapPin, GitBranch, ExternalLink, BriefcaseBusiness } from "lucide-react";
+import { X, LayoutDashboard, FolderKanban, BookOpen, CalendarCheck, Mail, MapPin, GitBranch, ExternalLink, BriefcaseBusiness, Book } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -14,6 +14,7 @@ const Sidebar = ({ menu, setMenu }) => {
     { name: "Projects",    icon: <FolderKanban size={18} />,    href: "/projects" },
     { name: "Blogs",       icon: <BookOpen size={18} />,        href: "/blogs" },
       { name: "Contact",     icon: <Mail size={18} />,            href: "/contact" },
+      { name: "Resume",     icon: <Book size={18} />,            href: "/resume" },
   ];
 
   return (
@@ -67,7 +68,7 @@ const Sidebar = ({ menu, setMenu }) => {
 
           {/* Bio */}
           <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
-            🌱 Learning, building, and growing — one project at a time.
+            Building responsive websites and powerful web applications.
           </p>
 
           {/* Divider */}
@@ -98,7 +99,7 @@ const Sidebar = ({ menu, setMenu }) => {
             </div>
             <div className="w-px bg-gray-200 dark:bg-zinc-700" />
             <div className="text-center">
-              <p className="text-lg font-bold text-gray-900 dark:text-white">Mern</p>
+              <p className="text-lg font-bold text-gray-900 dark:text-white">Full</p>
               <p className="text-xs text-gray-500 dark:text-gray-400">Stack</p>
             </div>
             <div className="w-px bg-gray-200 dark:bg-zinc-700" />

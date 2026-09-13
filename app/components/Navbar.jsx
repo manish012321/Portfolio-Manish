@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 
 import {
+  Book,
   BookOpen,
   BriefcaseBusiness,
   FolderKanban,
@@ -54,7 +55,7 @@ const Navbar = ({ dark, setDark }) => {
     },
     {
       name: "Resume",
-      icon: <Mail size={17} />,
+      icon: <Book size={17} />,
       href: "/resume",
     },
   ];
