@@ -4,15 +4,15 @@ import { ExternalLink, Star, GitFork, Lock, Globe } from 'lucide-react'
 import Link from 'next/link'
 
 const projects = [
-  
+
   {
-    name: "SOP Generator",
-    desc: "An AI-powered Statement of Purpose generator that helps students craft personalized SOPs for university applications.",
-    href: "https://github.com/manish012321/SOP-Generator",
+    name: "AI Docs Generator",
+    desc: "An AI-powered document generator that transforms raw text into 8 professional document types — resumes, SOPs, meeting notes, reports, and more — with structured output, PDF export, and multi-model fallback.",
+    href: "https://github.com/manish012321/AI-Docs-Generator",
     visibility: "Public",
-    stars: 8,
+    stars: 0,
     forks: 1,
-    tags: ["React", "OpenAI", "Tailwind"],
+    tags: ["React", "Node.js", "Gemini", "MongoDB", "Tailwind"],
     img: "/sop.png",
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     desc: "Reviewing a pull request often means reading a wall of red/green diff lines before understanding what actually changed and why. This extension adds a one-click summary layer on top of GitHub's own diff view, so a reviewer gets the gist immediately and can dig into specifics only where needed.",
     href: "https://github.com/manish012321/Explain-This-Diff",
     visibility: "Public",
-    stars: 10,
+    stars: 0,
     forks: 3,
     tags: ["Javascript", "AI", "Express"],
     img: null,
@@ -30,7 +30,7 @@ const projects = [
     desc: "A full-stack food delivery app with real-time order tracking, cart management, and payment integration.",
     href: "https://github.com/manish012321/vingo",
     visibility: "Public",
-    stars: 12,
+    stars: 2,
     forks: 3,
     tags: ["Next.js", "Node.js", "MongoDB", "Tailwind"],
     img: "/vingo.jpeg",
@@ -40,7 +40,7 @@ const projects = [
     desc: "A macOS-inspired developer portfolio with draggable windows, dock navigation, and a terminal.",
     href: "https://github.com/manish012321/macos-portfolio",
     visibility: "Public",
-    stars: 24,
+    stars: 4,
     forks: 5,
     tags: ["Next.js", "Framer Motion", "Tailwind"],
     img: "/macos.png",
