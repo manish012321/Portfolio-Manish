@@ -33,11 +33,11 @@ const Navbar = ({ dark, setDark }) => {
       icon: <LayoutDashboard size={17} />,
       href: "/",
     },
-    {
-      name: "Experience",
-      icon: <BriefcaseBusiness size={17} />,
-      href: "/experience",
-    },
+    // {
+    //   name: "Experience",
+    //   icon: <BriefcaseBusiness size={17} />,
+    //   href: "/experience",
+    // },
     {
       name: "Projects",
       icon: <FolderKanban size={17} />,
