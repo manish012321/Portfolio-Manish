@@ -275,7 +275,7 @@ const page = () => {
 
             {/* Box Game */}
             <div className='space-y-3'>
-              <h1 className='text-2xl font-bold '>🎮 Game</h1>
+              <h1 className='text-2xl font-bold '> Game</h1>
               <BoxGame />
             </div>
 

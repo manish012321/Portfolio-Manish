@@ -1,14 +1,15 @@
 import React from 'react'
 import Left from '../components/Left'
-import { Briefcase, Calendar, MapPin, ExternalLink } from 'lucide-react'
+import {  Calendar, MapPin, ExternalLink } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Experience = [
   {
     name: "Software Engineer Intern",
     company: "YugaYatra Retail (OPC) Private Limited",
-    desc: "Building production features across React, Next.js, Node.js, PostgreSQL and Supabase in a microservices-based environment for e-commerce and PropTech platforms.",
-    duration: "Aug 2026 - Present",
+    desc: "Engineered production features across React, Next.js, Node.js, PostgreSQL, and Supabase. Built foundational architecture from scratch, mastering Supabase for real-time data handling and PostgreSQL for complex relational modeling in a microservices environment.",
+    duration: "Aug 2026 - Oct 2026",
     location: "Remote",
     type: "Internship",
     tags: [
@@ -18,7 +19,25 @@ const Experience = [
       "PostgreSQL",
       "Supabase"
     ],
-    href: "https://www.manishsuriyal.dev/",
+    href: "https://www.yugayatraretail.com/",
+    img: "/yugayatra.png"
+  },
+  {
+    name: "Full Stack Developer Intern",
+    company: "Offbeat Pixels",
+    desc: "Architected and shipped high-quality production code for e-commerce and PropTech applications. Implemented technical SEO strategies (SSR/SSG, Core Web Vitals) and optimized database queries while collaborating in a microservices environment.",
+    duration: "Oct 2026 - Dec 2026",
+    location: "Dehradun (Uttarakhand), India",
+    type: "Internship",
+    tags: [
+      "React",
+      "Next.js",
+      "Node.js",
+      "PostgreSQL",
+      "Supabase"
+    ],
+    href: "https://www.offbeatpixels.com/",
+    img: "/offbeatpixels.png"
   },
 ]
 
@@ -65,10 +84,7 @@ const page = () => {
 
                   {/* Icon */}
                   <div className='w-12 h-12 rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 shrink-0 flex items-center justify-center'>
-                    <Briefcase
-                      size={22}
-                      className='text-blue-500 dark:text-blue-400'
-                    />
+                    <Image src={experience.img} alt={experience.name} width={48} height={48} />
                   </div>
 
                   {/* Info */}
@@ -136,7 +152,7 @@ const page = () => {
                         className='flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-blue-400 transition-colors'
                       >
                         <ExternalLink size={12} />
-                        Portfolio
+                        Company Website
                       </Link>
 
                     </div>
