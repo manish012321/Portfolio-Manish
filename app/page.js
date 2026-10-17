@@ -2,7 +2,7 @@
 import React from 'react'
 import Left from './components/Left'
 import { motion } from "motion/react"
-import BoxGame from './components/BoxGame'
+import EeveeGame from '../components/EeveeGame'
 
 
 const page = () => {
@@ -276,7 +276,7 @@ const page = () => {
             {/* Box Game */}
             <div className='space-y-3'>
               <h1 className='text-2xl font-bold '>Game</h1>
-              <BoxGame />
+              <EeveeGame />
             </div>
 
           </div>
