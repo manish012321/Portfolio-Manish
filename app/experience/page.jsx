@@ -11,7 +11,7 @@ const Experience = [
     desc: "Building production features across React, Next.js, Node.js, PostgreSQL and Supabase in a microservices-based environment for e-commerce and PropTech platforms.",
     duration: "Aug 2026 - Present",
     desc: "Engineered production features across React, Next.js, Node.js, PostgreSQL, and Supabase. Built foundational architecture from scratch, mastering Supabase for real-time data handling and PostgreSQL for complex relational modeling in a microservices environment.",
-    duration: "Aug 2026 - Oct 2026",
+    duration: "May 2026 - Jul 2026",
     location: "Remote",
     type: "Internship",
     tags: [
@@ -26,7 +26,7 @@ const Experience = [
     name: "Full Stack Developer Intern",
     company: "Offbeat Pixels",
     desc: "Architected and shipped high-quality production code for e-commerce and PropTech applications. Implemented technical SEO strategies (SSR/SSG, Core Web Vitals) and optimized database queries while collaborating in a microservices environment.",
-    duration: "Oct 2026 - Dec 2026",
+    duration: "jul 2026 - Oct 2026",
     location: "Dehradun (Uttarakhand), India",
     type: "Internship",
     tags: [

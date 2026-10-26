@@ -64,7 +64,7 @@ const page = () => {
 
                                 {/* View Resume */}
                                 <a
-                                    href='/Manish_Suriyal_Resume.pdf'
+                                    href='/Manish_resume.pdf'
                                     target='_blank'
                                     rel='noopener noreferrer'
                                     className='inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-zinc-300 dark:border-zinc-700 text-gray-700 dark:text-gray-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-sm font-medium transition-colors'
@@ -75,7 +75,7 @@ const page = () => {
 
                                 {/* Download Resume */}
                                 <a
-                                    href='/Manish_Suriyal_Resume.pdf'
+                                    href='/Manish_Resume.pdf'
                                     download
                                     className='inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium transition-colors'
                                 >
