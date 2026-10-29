@@ -62,10 +62,11 @@ const Navbar = ({ dark, setDark }) => {
 
   return (
     <>
-      {/* ================= TOP HEADER ================= */}
-      <header className="sticky top-0 z-50 w-full bg-slate-100 dark:bg-black border-b border-gray-200 dark:border-gray-800 shadow-sm">
+      {/* ============ SINGLE STICKY HEADER (top row + nav) ============ */}
+      <header className="sticky top-0 z-50 w-full bg-slate-100 dark:bg-black border-b border-gray-300 dark:border-gray-700 shadow-sm">
 
-        <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 py-2.5">
+        {/* ================= TOP ROW ================= */}
+        <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 py-2.5 border-b border-gray-200 dark:border-gray-800">
 
           {/* Logo & Name */}
           <div className="flex items-center gap-2.5 min-w-0">
@@ -77,9 +78,9 @@ const Navbar = ({ dark, setDark }) => {
 
             {/* Name */}
             <div className="min-w-0">
-              <h1 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 dark:text-white truncate">
+              <p className="text-sm sm:text-base md:text-lg font-bold text-gray-900 dark:text-white truncate">
                 Manish Suriyal
-              </h1>
+              </p>
 
               <p className="text-[10px] sm:text-xs text-gray-500 dark:text-gray-400 truncate">
                 Full Stack Developer
@@ -170,7 +171,7 @@ const Navbar = ({ dark, setDark }) => {
 
         {/* ================= MOBILE SEARCH ================= */}
         {!search && (
-          <div className="md:hidden px-3 pb-3">
+          <div className="md:hidden px-3 py-2 border-b border-gray-200 dark:border-gray-800">
             <Searchpage
               search={search}
               setSearch={setSearch}
@@ -178,12 +179,8 @@ const Navbar = ({ dark, setDark }) => {
           </div>
         )}
 
-      </header>
-
-      {/* ================= NAVIGATION ================= */}
-      <header className="sticky top-[61px] sm:top-[65px] z-40 w-full bg-slate-100 dark:bg-black border-b border-gray-300 dark:border-gray-700 shadow-sm">
-
-        <nav className="flex w-full overflow-x-auto scrollbar-hide px-1 sm:px-2 md:px-8">
+        {/* ================= NAVIGATION ================= */}
+        <nav className="flex w-full overflow-x-auto px-1 sm:px-2 md:px-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
 
           {navLinks.map((item) => (
             <Link
@@ -237,4 +234,3 @@ const Navbar = ({ dark, setDark }) => {
 };
 
 export default Navbar;
-
