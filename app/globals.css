@@ -2,7 +2,12 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-
+/* Hide default cursor on desktop */
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
 
 body {
   background-color: #f7fafc;
@@ -12,8 +17,65 @@ body {
 .dark body {
   background-color: #1F2937;
   color: #f7fafc;
-} 
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+/* Outer animated cursor */
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid #c70e0e;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -19px;
+  margin-top: -19px;
+  box-shadow: 0 0 15px rgb(147 114 79 / 20%);
+  backdrop-filter: blur(2px);
+}
+
+/* Center dot */
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background: #c70e0e;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000000;
+  margin-left: -3.5px;
+  margin-top: -3.5px;
+  box-shadow: 0 0 12px rgb(147 114 79 / 70%);
+}
+
+/* Center plus */
+.cursor-cross {
+  color: #c70e0e;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* Hover effect */
+.custom-cursor-ring.cursor-hover {
+  background: rgb(147 114 79 / 15%);
+  box-shadow: 0 0 25px rgb(147 114 79 / 35%);
+}
+
+/* Mobile and touch devices */
+@media (pointer: coarse) {
+  .custom-cursor-ring,
+  .custom-cursor-dot {
+    display: none;
+  }
+}
